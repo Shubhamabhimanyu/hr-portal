@@ -1,0 +1,17 @@
+.apply{
+    background-color: #ffffff !important;
+    color: #363636 !important;
+    border-color: #ffffff !important;
+}
+
+.apply :hover{
+    border-color: #ffffff !important;
+}
+
+.role_head{
+    background: #101010;
+}
+.link{
+    text-decoration: none;
+}
+

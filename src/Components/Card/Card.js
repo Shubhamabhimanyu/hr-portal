@@ -1,10 +1,11 @@
 import React from 'react'
 import './Card.css'
+import { Link } from 'react-router-dom'
 export default function Card(props) {
   return (
     <>
 
-      <div className='card_box '>
+      <div className='card_box animate__animated animate__zoomIn animate__delay-2s'>
         <div className='job_title'>
           {props.job_title}
         </div>
@@ -33,7 +34,7 @@ export default function Card(props) {
           {props.job_desc}
         </div>
         <div className='apply_now my-4'>
-          <button className='apply_now_text'>Apply Now</button>
+          <button className='apply_now_text'><Link to="/details" className='link'> Apply Now</Link></button>
         </div>
       </div>
 

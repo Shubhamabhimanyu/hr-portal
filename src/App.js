@@ -1,19 +1,24 @@
-import Card from "./Components/Card/Card";
-import './App.css'
-import { data } from "./Data";
-import Header from "./Components/Header/Header";
 
+import './App.css'
+import "@fontsource/fira-sans";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from './Pages/Home/Home';
+import JobDetails from './Pages/Job_details/JobDetails';
+import Header from './Components/Header/Header'
+import Form from './Pages/Form/Form';
 function App() {
   return (
     <>
-      <Header />
-      <div className='container row m-auto my-5'>
-        {data.map((item, i) => (
-          <div key={i} className=' col-md-3 col-sm-12 my-3'>
-            <Card job_title={item.title} job_date={item.date} stack1={item.stack1} stack2={item.stack2} job_exp={item.exp} job_desc={item.desc} />
-          </div>
-        ))}
-      </div>
+    
+     <BrowserRouter>
+     <Header/>
+      <Routes>
+        <Route exact path="/" element={<Home/>}/>
+          <Route exact path="/details" element={<JobDetails/>} />
+       <Route exact path='/applyjob' element={<Form/>}/>
+      </Routes>
+    </BrowserRouter>
+   
     </>
   );
 }

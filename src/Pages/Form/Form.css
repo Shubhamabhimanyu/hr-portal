@@ -1,0 +1,20 @@
+label{
+    margin: 5px;
+}
+
+input{
+    width: 100%;
+    border: 0px;
+    border-radius: 10px;
+    line-height: 2;
+}
+.resume-upload-button .resume_upload{
+ 
+    cursor: pointer;
+    opacity: 0;
+   
+}
+
+.font-x-small{
+    font-size: 10px;
+}
