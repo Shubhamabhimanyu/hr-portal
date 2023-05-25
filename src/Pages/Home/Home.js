@@ -1,8 +1,8 @@
 import React from 'react'
 import Card from "../../Components/Card/Card";
 import { data } from "../../Data";
-
 export default function Home() {
+    
     return (
         <>
       
