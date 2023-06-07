@@ -1,0 +1,28 @@
+.login_title{
+    font-family: 'JK Abode Regular Demo';
+font-style: normal;
+font-weight: 400;
+font-size: 65px;
+line-height: 96px;
+text-align: left;
+src: local('JK Abode Regular Demo'), url('../../../public/JKAbode-Demo.woff') format('woff');
+}
+.login_button{
+    border: 0px;
+    color: #fff;
+    width: 100%;
+    line-height: 2;
+    font-size: 20px;
+    background: #323232;
+}
+
+.login_input{
+    background: #000;
+    border-bottom: 2px solid white;
+    margin-bottom: 20px;
+    border-radius: 0px !important;
+}
+input:focus{
+    background-color: lightblue;
+    border: 0px;
+}

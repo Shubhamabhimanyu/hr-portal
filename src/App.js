@@ -7,6 +7,8 @@ import JobDetails from './Pages/Job_details/JobDetails';
 import Header from './Components/Header/Header'
 import Form from './Pages/Form/Form';
 import { useState, useEffect } from "react";
+import Thank from './Pages/Thank/Thank';
+import Login from './Pages/Login/Login';
 
 function App() {
   const [spinner, setSpinner] = useState(true);
@@ -30,6 +32,8 @@ function App() {
         <Route exact path="/" element={<Home/>}/>
           <Route exact path="/details" element={<JobDetails/>} />
        <Route exact path='/applyjob' element={<Form/>}/>
+       <Route exact path='/thank' element={<Thank/>} />
+       <Route exact path='/login' element={<Login/>} />
       </Routes>
     </BrowserRouter>
           </>
